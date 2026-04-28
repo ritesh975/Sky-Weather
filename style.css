@@ -1,0 +1,189 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("backgroundroshan.jpg") no-repeat center/cover;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CARD */
+.card {
+  width: 340px;
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+  color: white;
+}
+
+/* 🔥 MODERN SEARCH BAR */
+.search {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search input {
+  width: 100%;
+  padding: 14px 55px 14px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.18);
+  color: white;
+  font-size: 14px;
+
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+}
+
+.search input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.search input:focus {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+}
+
+/* Button inside input */
+.search button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  border: none;
+  cursor: pointer;
+
+  background: white;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.search button:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: #f1f1f1;
+}
+
+/* DEFAULT TEXT */
+.default h2 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.default p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* WEATHER */
+.weather {
+  display: none;
+  /* ritesh */
+}
+
+.weather-icon {
+  width: 80px;
+  margin: 15px 0;
+}
+
+.temp {
+  font-size: 42px;
+}
+
+.city {
+  margin-bottom: 5px;
+}
+
+.desc {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+/* DETAILS */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* ERROR */
+.error {
+  display: none;
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+/* ------------------------------------------------------ */
+/* Divider */
+.divider {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+/* Forecast Row */
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  /* roshan */
+}
+
+/* Each Day */
+.day {
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+/* Icon */
+.day img {
+  width: 28px;
+  margin: 5px 0;
+}
+
+/* Hover effect */
+.day:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.day {
+  text-align: center;
+  font-size: 12px;
+}
